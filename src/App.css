@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+  font-family:"Windows";
+}
+@font-face {
+  font-family: "Windows";
+  src: url("./assets/W95FA/w95fa.woff") format('woff');
+}
+
+body{
+  border-bottom: 6px black ridge;
+  border-right: 6px black ridge;
+  border-top: 6px #DFDFDF ridge;
+  border-left: 6px #DFDFDF ridge;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: #007B7B;
+}
+
+
+
+.Navbar_container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right, #00007B, #1F8BCC);
+  border-top: 6px #BDBDBD solid;
+  border-right: 6px #BDBDBD solid;
+  border-left: 6px #BDBDBD solid;
+  border-bottom: 3px #BDBDBD solid;
+  padding: 8px;
+  align-items: center;
+  color: white;
+}
+
+.Navbar_container p{
+  margin: 0;
+}
+
+.Navbar_container button{
+  background-color: #C0C0C0;
+  border-bottom: 3px black ridge;
+  border-right: 3px black ridge;
+  border-top: 3px white ridge;
+  border-left: 3px white ridge;
+  margin-left: 10px;
+}
+
+.Navbar_container button:hover{
+  cursor: pointer;
+}
