@@ -8,46 +8,442 @@
 }
 
 body{
-  border-bottom: 6px black ridge;
-  border-right: 6px black ridge;
-  border-top: 6px #DFDFDF ridge;
-  border-left: 6px #DFDFDF ridge;
   height: 100vh;
   width: 100vw;
   margin: 0;
-  background-color: #007B7B;
+  background: #007B7B url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/850d5888-f262-47d0-bb7b-34d03cd8d3ee/db6uwhg-aebcdfe7-02a6-4957-bd28-519073d39305.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg1MGQ1ODg4LWYyNjItNDdkMC1iYjdiLTM0ZDAzY2Q4ZDNlZVwvZGI2dXdoZy1hZWJjZGZlNy0wMmE2LTQ5NTctYmQyOC01MTkwNzNkMzkzMDUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Rrr6qUo5Hz60_r0gYRYEqRVdqc5FXy_Xk32J8pKOIrc);
+  image-rendering: pixelated;
+  background-size: 100% 100%;
 }
 
+button{
+    background-color: #C0C0C0;
+    border-bottom: 3px black ridge;
+    border-right: 3px black ridge;
+    border-top: 3px white ridge;
+    border-left: 3px white ridge;
+    display: flex;
+    padding: 0px 4px;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
+button:active{
+  border-top: 3px black ridge;
+  border-left: 3px black ridge;
+  border-bottom: 3px white ridge;
+  border-right: 3px white ridge;
+}
 
-.Navbar_container{
+.Page_Header{
+  background-color: #C0C0C0;
+}
+
+.Page_Title{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 50px;
+  height: 22px;
   background: linear-gradient(to right, #00007B, #1F8BCC);
-  border-top: 6px #BDBDBD solid;
-  border-right: 6px #BDBDBD solid;
-  border-left: 6px #BDBDBD solid;
-  border-bottom: 3px #BDBDBD solid;
-  padding: 8px;
+  padding: 2px;
   align-items: center;
   color: white;
 }
 
-.Navbar_container p{
+.Page_Title p{
   margin: 0;
+  font-size: 12px;
 }
 
-.Navbar_container button{
+.Page_Title button{
   background-color: #C0C0C0;
   border-bottom: 3px black ridge;
   border-right: 3px black ridge;
   border-top: 3px white ridge;
   border-left: 3px white ridge;
-  margin-left: 10px;
+  height: 14px;
+  width: 16px;
+  display: flex;
+  padding: 0;
+  align-items: center;
 }
 
-.Navbar_container button:hover{
+.Page_Title img {
+width: 100%;
+}
+
+.Page_Title button:hover{
   cursor: pointer;
+}
+
+.About_container{
+  height: 100%;
+  background: url(https://www.betaarchive.com/imageupload/1305896448.or.95121.jpg);
+  background-size: 100% 100%;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.About_container p h1 {
+  margin: 0;
+}
+
+.About_Header_Text{
+  font-size:8rem;
+  margin:0;
+}
+
+
+.Page_Toolbar{
+  width: 100%;
+  height: 28px;
+  background-color: #C0C0C0;
+}
+
+
+.Footer_container{
+  width: 100vw;
+  height: 30px;
+  background-color: #C0C0C0;
+  position: absolute;
+  bottom: 0;
+  outline: 1px #DFDFDF solid ;
+  border-top: 1px white solid;
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+  justify-content: space-between;
+}
+
+.Dash{
+  height: 100%;
+  width: 2px;
+  background-color: #808080;
+  margin: 0px 2px;
+  border-right: 1px white solid;
+}
+
+.Dash_Horizonal{
+  height: 2px;
+  width: 100%;
+  background-color: #D0D0D0;
+  border-bottom: 1px white solid;
+}
+
+.Handle{
+  height: 100%;
+  width: 5px;
+  border-top: 1px white solid;
+  border-right: 1px  #808080 solid;
+  border-bottom: 1px #808080 solid;
+  border-left: 1px white solid
+}
+
+.Toolbar_Section{
+  display: flex;
+  width: 100%;
+  padding: 2px 4px;
+  align-items:center ;
+  border-bottom: 1px #B0B0B0 solid;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.Toolbar_text{
+  display: flex;
+}
+
+.Toolbar_text p{
+  padding: 5px;
+}
+
+.Toolbar_text p:hover{
+  border-bottom: 1px black solid;
+  border-right: 1px black solid;
+  border-top: 1px #DFDFDF solid;
+  border-left: 1px #DFDFDF solid;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.Toolbar_text p:active{
+  border-top: 1px black solid;
+  border-left: 1px black solid;
+  border-bottom: 1px #DFDFDF solid;
+  border-right: 1px #DFDFDF solid;
+}
+
+.Footer_corner{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.Footer_corner img{
+  margin:3px;
+}
+
+.Icons_container{
+  height: 100vh;
+  width: 300px;
+  
+}
+
+.Icon{
+  height: 75px;
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.Icon img{
+  width: 32px;
+}
+
+.Icon_text p{
+  margin: 5px 0px 0px 0px ;
+  text-align: center;
+}
+
+.Page_container{
+  height: 85vh;
+  width: 90vw;
+  padding: 3px;
+  border: 1px solid black;
+  position:absolute;
+  top: 5%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 6px black ridge;
+  border-right: 6px black ridge;
+  border-top: 6px #DFDFDF ridge;
+  border-left: 6px #DFDFDF ridge;
+  background-color:#C0C0C0;
+}
+
+.Toolbar_Container{
+  border: 1px solid #808080;
+  margin-top:1px;
+}
+
+.Section_Icon{
+  height: 40px;
+  width: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Section_Icon:hover{
+  border-bottom: 1px black solid;
+  border-right: 1px black solid;
+  border-top: 1px #DFDFDF solid;
+  border-left: 1px #DFDFDF solid;
+  height: 42px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.Section_Icon:active{
+  border-top: 1px black solid;
+  border-left: 1px black solid;
+  border-bottom: 1px #DFDFDF solid;
+  border-right: 1px #DFDFDF solid;
+  height: 42px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.Section_Icon_Image{
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  background-image: url(https://98.js.org/images/browse-ui-icons-grayscale.png);
+}
+
+.Section_Icon p{
+  margin: 0;
+  font-size: 12px;
+}
+
+.Address_Bar{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-top: ridge 1px black;
+  border-left: groove 1px black;
+  border-right: groove 1px black;
+  border-bottom: groove 1px white;
+  display: flex;
+  align-items: center;
+}
+
+.Address_Bar p{
+  margin: 0;
+}
+
+.Address_Bar img{
+  margin: 0px 4px 0px 2px;
+}
+
+.Page_Content{
+  flex: 1 1;
+  background-color: white;
+  border-top: groove 1px black;
+  border-left: groove 1px black;
+  border-right: groove 1px white;
+  border-bottom: groove 1px white;
+  overflow-y: scroll;
+}
+
+.Page_Footer{
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3px;
+}
+  
+.Page_Footer_Section{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 3px;
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.Page_Footer_Section p{
+  margin: 0;
+}
+
+.Page_Footer_Section img{
+  margin-right: 5px;
+}
+
+.Project_Page_Container{
+  background: url(https://99percentinvisible.org/app/uploads/2019/07/solo-jaz.jpg);
+  background-size: 100% 100%;
+  color: white;
+  background-attachment: fixed;
+  padding: 10px;
+}
+
+.Project_Page_Container h1{
+  margin: 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.Projects_Container{
+  position: relative;
+  margin-top: 150px;
+}
+
+.Project{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.Project_Image{
+  width: 30%;
+}
+
+.Project_Info{
+  border: 1px solid black;
+  height: 100%;
+  background-color: #007B7B;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.Skill_Icons{
+  display: flex;
+  justify-content: center;
+}
+
+.Skill_Icons img {
+  width: 10%;
+}
+
+.Contact_Container{
+  background: url(https://4kwallpapers.com/images/walls/thumbs_3t/4523.jpg);
+  background-size: 100% 100%;
+  height: 100%;
+  display: flex;
+  align-items:center;
+}
+
+.Contact_Container{
+  color: white;
+}
+
+.About_Skill_Container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.About_Text{
+width: 50%;
+margin: auto;
+}
+
+.About_Skill_Container img{
+  width: 75px;
+  margin: 0px 5px;
+}
+
+.contact_info{
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+.Page_container{
+  left: auto;
+  right: 0;
+}
+
+.About_Header_Text{
+  font-size: 6rem;
+}
+
+.contact_info h1{
+  font-size: 24px;
+}
+
+.Contact_Container img{
+  width: 50%;
+}
+  
+}
+
+@media only screen and (max-width: 650px){
+  .About_Skill_Container img{
+    width: 15%;
+  }
+
+  .About_Text{
+    width: 75%;
+    margin: auto;
+  }
+
+  .Project_Image{
+    width: 50%;
+  }
+
 }
