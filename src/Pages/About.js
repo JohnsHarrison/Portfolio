@@ -12,7 +12,7 @@ function About(){
             </div>
             <div className="About_Text">
                 <p>
-                    My Names John Harrison. I'm an apiring Web Developer from the Pittsburgh Area with a passion for making fun and interactive web designs. I started my programming journey in the spring of 2022 after desiring to persue a more fulfilling career. Previously I worked as a lathe operator programming CNC lathes and during that time I learned how satisfying it was to see a project that seemed difficult at first slowly take shape into a finished project. With my new skills, I aim to replicate that same satisfaction while also being able to express myself.
+                    My names John Harrison. I'm an apiring Web Developer from the Pittsburgh Area with a passion for making fun and interactive web designs. I started my programming journey in the spring of 2022 after desiring to persue a more fulfilling career. Previously I worked as a lathe operator programming CNC lathes and during that time I learned how satisfying it was to see a project that seemed difficult at first slowly take shape into a finished project. With my new skills, I aim to replicate that same satisfaction while also being able to express myself.
                 </p>   
 
                 <h1 style={{"margin":"20px 0px 0px 0px", "textDecoration":"underline"}}>Skills</h1>
