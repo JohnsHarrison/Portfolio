@@ -2,7 +2,7 @@ import User from "../assets/User.svg"
 import Projects from "../assets/Projects.svg"
 import Contact from "../assets/Contact.svg"
 import Resume from "../assets/Resume.svg"
-import Resume_Document from "../assets/JSH_Resume.odt"
+import Resume_Document from "../assets/Resume 2023.pdf"
 import { useNavigate } from "react-router-dom"
 
 function Icons(props){
@@ -38,7 +38,7 @@ function Icons(props){
             </div>
 
             <div className="Icon">
-                <a target="_blank" rel="noreferrer"  href={Resume_Document}><img alt="" src={Resume}></img></a>
+                <a target='_blank' rel='noopener noreferrer' href={Resume_Document}><img alt="" src={Resume}></img></a>
                 <div className="Icon_text">
                     <p>Résumé</p>
                 </div>
