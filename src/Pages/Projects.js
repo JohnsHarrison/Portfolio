@@ -29,15 +29,15 @@ function Projects(){
                 <div className="Project">
                    <div style={{"width":"50%"}}>
                     <div className="Project_Info">
-                        <h1 style={{"fontSize":"3rem"}}>Desktop Drummer</h1>
-                        <p style={{"marginTop":"50px"}}>Interactive drum app where you can use your keyboard or mouse to make drum sounds. Also features a grid of notes to allow the user to create a drum loop. </p>
+                        <h1 style={{"fontSize":"3rem"}}>Mamazon</h1>
+                        <p style={{"marginTop":"50px"}}>A mockup of an online store allowing users to fill a cart with items and see the total cost and cart items update instantly.  </p>
                         <h2 style={{"textAlign":"center"}}>Skills Used</h2>
                         <div className="Skill_Icons">
                            <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" /> 
                            <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
                         </div>             
                     </div>
-                       <a target="_blank" rel="noreferrer" style={{"textDecoration":"none"}} href="https://desktop-drummer.netlify.app/"> <button style={{"margin":"10px auto 0px"}}>View Project</button></a>
+                       <a target="_blank" rel="noreferrer" style={{"textDecoration":"none"}} href="https://jshmamazon.netlify.app//"> <button style={{"margin":"10px auto 0px"}}>View Project</button></a>
                    </div>
                    <img alt="" className="Project_Image" src={Desktop_Drummer}></img>
                 </div>
